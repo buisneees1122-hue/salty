@@ -77,16 +77,16 @@ export function SiteHeader() {
         <div className="md:hidden border-t">
           <div className="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-3">
             {navItems.map((item) => (
-              <a key={item.href} href={item.href} className="py-1 text-sm hover:text-primary">
+              <a key={item.href} href={item.href} className="py-1 text-sm hover:text-primary" onClick={() => setOpen(false)}>
                 {item.label}
               </a>
             ))}
             <div className="flex items-center gap-2 pt-2">
               <Button asChild variant="secondary" className="flex-1">
-                <a href="tel:+13863310402">Call Now</a>
+                <a href="tel:+13863310402" onClick={() => setOpen(false)}>Call Now</a>
               </Button>
               <Button asChild className="flex-1">
-                <a href="#contact">Get Free Quote</a>
+                <a href="#contact" onClick={() => setOpen(false)}>Get Free Quote</a>
               </Button>
             </div>
           </div>

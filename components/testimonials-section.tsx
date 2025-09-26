@@ -17,7 +17,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section id="testimonials" className="py-16">
+    <section id="testimonials" className="py-16 scroll-mt-24">
       <div className="mx-auto max-w-6xl px-4">
         <div className="mb-8">
           <h2 className="text-3xl font-semibold text-balance">What People Say</h2>
