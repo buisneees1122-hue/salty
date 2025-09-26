@@ -28,13 +28,23 @@ export function ContactSection() {
           <div className="mt-6 space-y-2 text-sm">
             <p>
               Phone:{" "}
-              <a href="tel:+13863310402" className="text-primary underline-offset-2 hover:underline">
+              <a
+                href="tel:+13863310402"
+                className="contact-chip"
+                data-icon="phone"
+                aria-label="Call Salty Dawgs Junk Removal at (386) 331-0402"
+              >
                 (386) 331-0402
               </a>
             </p>
             <p>
               Email:{" "}
-              <a href="mailto:saltydawgsjunk@gmail.com" className="text-primary underline-offset-2 hover:underline">
+              <a
+                href="mailto:saltydawgsjunk@gmail.com?subject=Hello%20Salty%20Dawgs"
+                className="contact-chip"
+                data-icon="email"
+                aria-label="Email Salty Dawgs Junk Removal"
+              >
                 saltydawgsjunk@gmail.com
               </a>
             </p>

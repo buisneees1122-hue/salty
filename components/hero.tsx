@@ -29,11 +29,21 @@ export function Hero() {
           </div>
           <div className="text-sm text-muted-foreground">
             Phone:{" "}
-            <a className="text-primary underline-offset-2 hover:underline" href="tel:+13863310402">
+            <a
+              className="contact-chip"
+              data-icon="phone"
+              href="tel:+13863310402"
+              aria-label="Call Salty Dawgs Junk Removal at (386) 331-0402"
+            >
               (386) 331-0402
             </a>{" "}
             · Email:{" "}
-            <a className="text-primary underline-offset-2 hover:underline" href="mailto:saltydawgsjunk@gmail.com">
+            <a
+              className="contact-chip"
+              data-icon="email"
+              href="mailto:saltydawgsjunk@gmail.com?subject=Hello%20Salty%20Dawgs"
+              aria-label="Email Salty Dawgs Junk Removal"
+            >
               saltydawgsjunk@gmail.com
             </a>
           </div>
