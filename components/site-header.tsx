@@ -16,7 +16,7 @@ export function SiteHeader() {
     { href: "#contact", label: "Contact" },
   ]
   return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
+    <header className="sticky top-0 z-50 border-b bg-background/40 supports-[backdrop-filter]:bg-background/25 backdrop-blur-xl shadow-md">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image

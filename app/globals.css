@@ -140,3 +140,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes hero-pan {
+  from { background-position: 0% center; }
+  to { background-position: 100% center; }
+}
+
+@layer utilities {
+  .hero-animated-bg {
+    background-image: url('/professional-junk-removal-service-photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    animation: hero-pan 40s linear infinite alternate;
+    will-change: background-position;
+    opacity: 0.28;
+  }
+}
