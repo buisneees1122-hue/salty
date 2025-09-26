@@ -157,3 +157,14 @@
     opacity: 0.28;
   }
 }
+
+@layer components {
+  .contact-chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-xs text-primary shadow-sm transition;
+    @apply hover:bg-primary/15 hover:border-primary/30 hover:shadow-md;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40;
+    text-decoration: none;
+  }
+  .contact-chip[data-icon="phone"]::before { content: "📞"; }
+  .contact-chip[data-icon="email"]::before { content: "✉️"; }
+}

@@ -26,17 +26,17 @@ export function ContactSection() {
           <p className="text-muted-foreground">Call, email, or request a quick callback — we respond fast.</p>
 
           <div className="mt-6 space-y-2 text-sm">
-            <p>
-              Phone:{" "}
-              <a href="tel:+13863310402" className="text-primary underline-offset-2 hover:underline">
-                (386) 331-0402
-              </a>
+            <p className="flex items-center gap-2 flex-wrap">
+              <span>Phone:</span>
+              <Button asChild size="sm" className="shadow">
+                <a href="tel:+13863310402" aria-label="Call Salty Dawgs Junk Removal at (386) 331-0402">(386) 331-0402</a>
+              </Button>
             </p>
-            <p>
-              Email:{" "}
-              <a href="mailto:saltydawgsjunk@gmail.com" className="text-primary underline-offset-2 hover:underline">
-                saltydawgsjunk@gmail.com
-              </a>
+            <p className="flex items-center gap-2 flex-wrap">
+              <span>Email:</span>
+              <Button asChild size="sm" variant="secondary" className="shadow">
+                <a href="mailto:saltydawgsjunk@gmail.com?subject=Hello%20Salty%20Dawgs" aria-label="Email Salty Dawgs Junk Removal">saltydawgsjunk@gmail.com</a>
+              </Button>
             </p>
           </div>
 

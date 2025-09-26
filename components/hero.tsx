@@ -27,15 +27,16 @@ export function Hero() {
               <a href="#contact">Get Free Quote</a>
             </Button>
           </div>
-          <div className="text-sm text-muted-foreground">
-            Phone:{" "}
-            <a className="text-primary underline-offset-2 hover:underline" href="tel:+13863310402">
-              (386) 331-0402
-            </a>{" "}
-            · Email:{" "}
-            <a className="text-primary underline-offset-2 hover:underline" href="mailto:saltydawgsjunk@gmail.com">
-              saltydawgsjunk@gmail.com
-            </a>
+          <div className="text-sm text-muted-foreground flex flex-wrap items-center gap-2">
+            <span>Phone:</span>
+            <Button asChild size="sm" className="shadow">
+              <a href="tel:+13863310402" aria-label="Call Salty Dawgs Junk Removal at (386) 331-0402">(386) 331-0402</a>
+            </Button>
+            <span className="opacity-70">·</span>
+            <span>Email:</span>
+            <Button asChild size="sm" variant="secondary" className="shadow">
+              <a href="mailto:saltydawgsjunk@gmail.com?subject=Hello%20Salty%20Dawgs" aria-label="Email Salty Dawgs Junk Removal">saltydawgsjunk@gmail.com</a>
+            </Button>
           </div>
         </div>
 
